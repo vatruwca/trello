@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box todo_box">
+        <div class="box_header">
+            <div class="header_title">TODO</div>
+            <div class="header_btn"></div>
+        </div>
+        <div class="card_box"></div>
+        <div class="box_footer">
+            <button class="btn_open-form" data-name-form="todoadd"></button>
+            <div class="footer_title">Add another card</div>
+        </div>
+        <form name="todoadd" class="add-card hiden">
+            <textarea name="todo" id="todo" rows="5" class="enter-text"></textarea>
+            <div class="add-card_btns">
+                <button class="btn_add">Add Card</button>
+                <button class="cansel"></button>
+            </div>
+        </form>
+    </div>
+    <div class="box progress_box">
+        <div class="box_header">
+            <div class="header_title">IN PROGRESS</div>
+            <div class="header_btn"></div>
+        </div>
+        <div class="card_box"></div>
+        <div class="box_footer">
+            <button class="btn_open-form" data-name-form="progressadd"></button>
+            <div class="footer_title">Add another card</div>
+        </div>
+        <form name="progressadd" class="add-card hiden">
+            <textarea name="progress" rows="5" class="enter-text"></textarea>
+            <div class="add-card_btns">
+                <button class="btn_add">Add Card</button>
+                <button class="cansel"></button>
+            </div>
+        </form>
+    </div>
+    <div class="box done_box">
+        <div class="box_header">
+            <div class="header_title">DONE</div>
+            <div class="header_btn"></div>
+        </div>
+        <div class="card_box"></div>
+        <div class="box_footer">
+            <button class="btn_open-form" data-name-form="doneadd"></button>
+            <div class="footer_title">Add another card</div>            
+        </div>
+        <form name="doneadd" class="add-card hiden">
+            <textarea name="done" rows="5" class="enter-text"></textarea>
+            <div class="add-card_btns">
+                <button class="btn_add">Add Card</button>
+                <button class="cansel"></button>
+            </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>

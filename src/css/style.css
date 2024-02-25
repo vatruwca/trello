@@ -1,0 +1,174 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  background-color: rgb(222, 164, 15);
+
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+.box {
+  height: fit-content;
+  width: 33%;
+  background-color: rgb(199, 194, 194);
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.header_title {
+  font-weight: bold;
+}
+
+.header_btn {
+  background-image: url('../img/three.png');
+  background-color: inherit;
+  width: 20px;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: white;
+
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.btn_del {
+  background-image: url('../img/delete.png');
+  background-color: inherit;
+  background-size: cover;
+
+  border: none;
+
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+
+  position: absolute;
+  z-index: 99;
+  top: 5px;
+  right: 5px;
+}
+
+.box_footer {
+  display: flex;
+  padding: 5px;
+}
+
+.btn_open-form {
+  background-image: url('../img/plus.png');
+  background-color: inherit;
+  background-size: cover;
+
+  border: none;
+
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+
+  padding: 0;
+  margin-right: 10px;
+}
+
+.enter-text {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  height: fit-content;
+  min-height: 50px;
+  max-height: 200px;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+.add-card_btns {
+  display: flex;
+  padding: 10px;
+}
+
+.btn_add {
+  background-color: rgb(245, 230, 24);
+  
+  color: rgb(35, 6, 6);
+
+  border: none;
+  box-sizing: border-box;
+
+  padding: 5px;
+}
+
+.cansel {
+  background-image: url('../img/cansel.png');
+  background-color: inherit;
+  background-size: cover;
+
+  
+  align-self: center;
+
+  border: none;
+  box-sizing: border-box;
+
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}
+
+.hiden {
+  display: none;
+}
+
+.dragged {
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.toolTip {
+  max-width: 300px;
+  padding: 2px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 99;
+  background-color: yellow;
+}
+
+.toolTip::before, .toolTip::after {
+  content: ''; 
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid yellow;
+}
+
+.toolTip::after {
+  border-bottom: 10px solid yellow;
+  top: -19px; 
+}
